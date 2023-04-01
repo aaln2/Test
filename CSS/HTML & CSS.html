@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Page Title </title>
+<style>
+    table,th,td{
+        border: 1px solid black;
+    }
+
+    body{
+
+        background-image:url('img2zz.jpg') ;
+        background-repeat: repeat-y ;
+    }
+
+    #dd {
+        background-color: burlywood;
+        display: inline;
+        color: #fff;
+        text-align:center;
+        font-family: Arial;
+        font-size: 20px;
+    }
+    #ff{
+        text-align: center;
+        font-size: 35px;
+        font-family:'Gill Sans','Gill Sans MT','Trebuchet MS';
+        color: #f9f9f9;
+        background-color: brown;
+        position: sticky;
+        top: 5px;
+    }
+    a {
+        color: #eb3737;
+    }
+    a:hover{
+        color:chartreuse;
+    }
+
+    #CSS {
+        display: inline;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #eb3737 rgb(5, 218, 5) blue  yellow;
+        border-radius: 10px;
+    }
+    #div{
+        background-color:  rgba(17, 220, 239, 0.863);
+        width: 500px;
+        border: 10px solid blue;
+        padding: 30px ;
+        margin: 10px;
+    }
+    
+    .box {
+    height: 400px;
+    width: 400px;
+    border: 5px solid black;
+    margin: 20px;
+    position: relative;
+    }
+    .box1, .box2 {
+    height: 150px;
+    width: 150px;
+    }
+    .box1 {
+    background-color: coral;
+    position: relative;
+    right: 50px;
+    position: fixed;
+    }
+    .box2{
+        background-color: aqua;
+    }
+
+</style>
+</head>
+<body >
+
+<h1> Heading </h1>
+<p dir="rtl" id="ff"> <b> محمد العطاس </b> </p><!--my name-->
+<p id="dd"> branch test branch test branch test branch <br> <strong><i>branch test</i> </strong>
+            branch test branch test <b>test</b> <strong>test branch</strong> test 
+</p><br><br>
+<p id="CSS">
+    CSS Test CSS Test CSS Test CSS Test CSS Test CSS Test CSS Test CSS Test CSS Test CSS Test 
+    CSS Test CSS Test 
+</p><br><br>
+
+<p id="div">
+    div Test div Test div Test div Test div Test div Test div Test div Test div Test div Test 
+    div Test div Test div Test div Test div Test div Test div Test div Test div Test div Test 
+    div Test div Test div Test div Test div Test div Test div Test div Test div Test div Test 
+</p><br><br>
+
+<div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+
+<br><br>
+<img src="img.jpg" height="250" width="200" alt="Space">
+<hr><!--هنا الخط   () -->
+
+<h2> H1 Line: </h2>
+<ol type="A">
+<li> 111 </li>
+<li> 222 </li>
+<li> 333 </li>
+</ol>
+<h2> H2 Line: </h2>
+<ul>
+<li> 111 </li>
+<li> 222 </li>
+<li> 333 </li>
+</ul>
+<p>
+    for kooora press <a href="https://www.kooora.com/">kooora</a>
+</p><br>
+
+<table>
+    <caption> Names and Ages </caption>
+    <tr>
+        <th>Name</th> <th>Age</th>
+    </tr>
+    <tr>
+        <td>Khalid</td> <td>19</td>
+    </tr>
+    <tr>
+        <td>Ali</td> <td>20</td>
+    </tr>
+    <tr>
+        <td colspan="2"> <b> Omar 17</td>
+    </tr>
+</table><br>
+<form>
+<label for="name"> User Name: </label>
+<input type="text" id="name" > <br>
+<p> you are: </p>
+<label for="male"> male </label>
+<input type="radio" id="male" name="gender" > 
+<label for="female"> female </label>
+<input type="radio" id="female" name="gender" > <br><br>
+
+<p> What do you like: </p>
+<label for="sun"> Sun </label>
+<input type="checkbox" id="sun" name="sun" > <br>
+<label for="mars"> Mars </label>
+<input type="checkbox" id="mars" name="mars" ><br>
+<label for="Earth"> Earth </label>
+<input type="checkbox" id="earth" name="earth" ><br><br>
+
+<label for="name"> Choose my name:</label>
+<select id="name" name="name">
+    <option value="Khalid">Khalid</option>
+    <option value="Ali">Ali</option>
+    <option value="Mohammed">Mohammed</option>
+</select><br><br>
+
+<input type="submit" value="Submit" >
+
+
+</form>
+
+
+</body>
+</html>
