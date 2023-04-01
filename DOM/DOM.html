@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div id="div1">
+        <h1> Programming Language</h1>
+        <ul>
+            <li id="li1"> JS </li>
+            <li id="li2"> Kotlin </li>
+            <li id="li3"> Swift </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2> Programming Language 2</h2>
+        <ul>
+            <li class="JS"> JS </li>
+            <li class="JS"> Kotlin </li>
+            <li class="JS"> Swift </li>
+        </ul>
+    </div>
+
+    <div>
+        <h3> Programming Language 3</h3>
+        <ul>
+            <li> JS </li>
+            <li> Kotlin </li>
+            <li> Swift </li>
+        </ul>
+    </div>
+
+    <div>
+        <h4> Programming Language 4</h4>
+        <ul class="E4">
+            <li> JS </li>
+            <p> JavaScript JavaScript JavaScript JavaScript </p>
+            <li> Kotlin </li>
+            <p>Kotlin Kotlin Kotlin Kotlin Kotlin Kotlin Kotlin </p>
+            <li> Swift </li>
+            <p>Swift Swift Swift Swift Swift Swift Swift Swift </p>
+        </ul>
+    </div>
+
+    <script>
+        let E1 = document.getElementById('li2')
+        console.log(E1)
+
+        let E2 = document.getElementsByClassName("JS")
+        console.log(E2[1])
+
+        let E3 = document.getElementsByTagName('li')
+        console.log(E3)
+
+        let E4 = document.querySelectorAll('.E4 p')
+        console.log(E4)
+
+        let E5 = document.querySelector('#li3')
+        E5.innerText = "innerText to --> JAVA"
+        E5.style.backgruond = "red"
+
+        let E6 = document.querySelector("#li1")
+        E6.style.background = "red"
+
+        let E7 = document.querySelector('.E4')
+        let ruby = document.createElement("li")
+        ruby.innerText="Ruby"
+        E7.append(ruby)
+        console.log(E7)
+
+        let E8 = document.querySelector(".E4")
+        let DEL = document.querySelectorAll("li")[10]
+        DEL.remove()
+        console.log(E8)
+    </script>
+    
+</body>
+
+</html>
