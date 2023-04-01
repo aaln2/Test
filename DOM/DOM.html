@@ -8,6 +8,10 @@
 </head>
 
 <body>
+    <div>
+        <h3>Clicks: <span id="Clicks">0</span></h3>
+        <button type="button" onClick="add()">+</button>
+    </div>
     <div id="div1">
         <h1> Programming Language</h1>
         <ul>
@@ -47,6 +51,8 @@
         </ul>
     </div>
 
+
+
     <script>
         let E1 = document.getElementById('li2')
         console.log(E1)
@@ -77,6 +83,13 @@
         let DEL = document.querySelectorAll("li")[10]
         DEL.remove()
         console.log(E8)
+
+        let Clicks = 0;
+        function add(){
+            Clicks++;
+            document.getElementById("Clicks").innerText = Clicks
+        }
+
     </script>
     
 </body>
